@@ -18,6 +18,7 @@ class MP3Importer
   def import
     self.files.each { |file|
       x = Song.new_by_filename(file)
+      binding.pry
     }
   end
 
