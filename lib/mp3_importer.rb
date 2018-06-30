@@ -12,7 +12,7 @@ class MP3Importer
     files_array = []
     Dir[@path + "/*"].each{|f| files_array << f.scan(/\/\D+\.mp3/)[0]}
     files_array.map {|file_name| file_name[0] = ""} # Delete the "/" character
-    files_array
+    @files = files_array
   end
 
   def import
