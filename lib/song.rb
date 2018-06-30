@@ -9,7 +9,7 @@ class Song
     artist_song = file_name.split(" - ")
     artist_name = artist_song.first
     song_name = artist_song.last
-    Artist.find_or_create_by_name(artist)
+    artist = Artist.find_or_create_by_name(artist_name)
   end
 
 end
