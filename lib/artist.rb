@@ -32,6 +32,7 @@ class Artist
     self.all.each{|artist| artist_found = artist if artist.name == artist_name }
     if artist_found.nil?
       artist_found = Artist.new(artist_name)
+      @@all << artist_found
     end
     artist_found
   end
