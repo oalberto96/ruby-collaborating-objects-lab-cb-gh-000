@@ -14,7 +14,7 @@ class MP3Importer
     files_array.map do |file_name|
       file_name[0] = "" # Delete the "/" character
     end
-    puts files_array
+    files_array
   end
 
   def import
