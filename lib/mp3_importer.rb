@@ -10,7 +10,7 @@ class MP3Importer
 
   def files
     files_array = []
-    Dir[@path + "/*"].each{|f| files_array << f.math(/\/\D+\.mp3/)}
+    Dir[@path + "/*"].each{|f| files_array << f.match(/\/\D+\.mp3/)}
     puts files_array
     binding.pry
   end
