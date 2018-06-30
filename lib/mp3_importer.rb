@@ -17,9 +17,9 @@ class MP3Importer
   end
 
   def import
-    @files.each { |file| 
-      x = Song.new_by_filename(file)   
-      binding.pry
+    binding.pry
+    @files.each { |file|
+      x = Song.new_by_filename(file)
     }
   end
 
